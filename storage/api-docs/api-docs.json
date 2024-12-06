@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My API",
+        "description": "API documentation for personal accounting system",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/transactions": {
+            "get": {
+                "tags": [
+                    "Transactions"
+                ],
+                "summary": "Get all transactions of authorized user",
+                "description": "Returns a list of transactions",
+                "operationId": "5effd5c228c8c92f09b136d74aacab83",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/transaction/store": {
+            "post": {
+                "tags": [
+                    "Create Transaction"
+                ],
+                "summary": "Create new transaction",
+                "description": "Returns a list of transactions",
+                "operationId": "518c633a63900e934c26df7b2bbc94e6",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Transactions",
+            "description": "API Endpoints for Transactions"
+        },
+        {
+            "name": "Create Transaction",
+            "description": "Create Transaction"
+        }
+    ]
+}
